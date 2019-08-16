@@ -1,0 +1,72 @@
+{
+  "name": "interview-coding-test-co",
+  "version": "1.0.0",
+  "description": "ComparaOnline Software Engineer Test",
+  "keywords": [
+    "ComparaOnline",
+    "Test",
+    "Engineer",
+    "Software",
+    "NodeJS"
+  ],
+  "author": {
+    "email": "daniel.valenzuela@softcrum.com",
+    "name": "ComparaOnline",
+    "url": "https://www.comparaonline.com"
+  },
+  "contributors": [
+    "Daniel Valenzuela <daniel.valenzuela@softcrum.com>"
+  ],
+  "license": "MIT",
+  "private": false,
+  "homepage": "https://github.com/danivalenzuelas/interview-coding-test-co#readme",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danivalenzuelas/interview-coding-test-co.git"
+  },
+  "bugs": {
+    "email": "daniel.valenzuela@softcrum.com",
+    "url": "https://github.com/danivalenzuelas/interview-coding-test-co/issues"
+  },
+  "engines": {
+    "node": ">=10.16.0",
+    "npm": ">=6.10.3"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "./coverage/",
+    "coveragePathIgnorePatterns": [
+      "coverage",
+      "node_modules"
+    ],
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "after-30-days": "",
+    "lint": "eslint index.js src/*.js utils/*.js src/**/*.js",
+    "message:commit": "echo 'Se comienzan ha realizar las pruebas ... script lint & script test'",
+    "start": "index.js & npm run lint:watch",
+    "test": "jest --verbose --forceExit"
+  },
+  "pre-commit": [
+    "message:commit",
+    "lint",
+    "test"
+  ],
+  "dependencies": {
+    "fs": "0.0.2",
+    "uuid": "3.3.2"
+  },
+  "devDependencies": {
+    "eslint": "6.1.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.14.3",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "eslint-watch": "6.0.0",
+    "jest": "24.9.0",
+    "pre-commit": "1.2.2"
+  }
+}

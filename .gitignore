@@ -1,0 +1,42 @@
+# Gitignore
+
+# Dependencies
+/node_modules
+
+# Test
+/coverage
+
+# Production
+/bin
+/build
+
+# Files and Folders
+/.git
+/.vscode
+*~
+*.sw[a-z]
+*.un~
+%*
+._*
+.AppleDouble
+.DS_Store
+.env
+.env.development.local
+.env.local
+.env.production.local
+.env.test.local
+.localized
+.LSOverride
+.netrwhist
+.Spotlight-V100
+.Trashes
+Desktop.ini
+ehthumbs.db
+Icon
+node.log
+npm-debug.log*
+package-lock.json
+Session.vim
+Thumbs.db
+yarn-debug.log*
+yarn-error.log*
