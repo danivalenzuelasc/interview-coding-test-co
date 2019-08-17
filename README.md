@@ -79,11 +79,30 @@ for (let i = 1; i <= 30; i += 1) {
 ## Solution
 - Architecture based on object-oriented programming
 - Architecture developed in NodeJS (`node`: 10.16.0, `npm`: 6.10.3)
-- Meaningful git commits, we expect to see your solution approach as commit messages
-- We expect a Node.js (>6) codebase, otherwise you should provide a `Dockerfile` with all the required dependencies to run the required commands.
-- 100% code coverage, you should provide the report and the command to run the tests and get the coverage report.
+- Git hooks are added to prevent source code upload without proof review
+- Linters are added to verify that the programming standard is met
+- The continuous integration process is added through TravisCI
 
 ### Required commands
 - `yarn lint`, run the linter set display the standardization error report
+
+<p align='center'>
+  <img src='https://raw.githubusercontent.com/danivalenzuelas/interview-coding-test-co/master/assets/linter.png' width='350' alt='Run script lint'>
+</p>
+
 - `yarn test`, run the test set and show the coverage report
+
+<p align='center'>
+  <img src='https://raw.githubusercontent.com/danivalenzuelas/interview-coding-test-co/master/assets/testing-product.png' width='350' alt='Run script lint'>
+</p>
+<p align='center'>
+  <img src='https://raw.githubusercontent.com/danivalenzuelas/interview-coding-test-co/master/assets/testing-carInsurance.png' width='350' alt='Run script lint'>
+</p>
+<p align='center'>
+  <img src='https://raw.githubusercontent.com/danivalenzuelas/interview-coding-test-co/master/assets/testing-summary.png' width='600' alt='Run script lint'>
+</p>
+
 - `yarn start` or `yarn after-30-days`, the file `products_after_30_days.txt` is exported with the results obtained
+
+### Conclusions
+Reviewing the operation of the delivered algorithm, inconsistencies were found regarding the Special Full Coverage type, when the price is increased it does not do so correctly when it enters the condition `0 <= x <= 5` and `5 <x <= 10`, so correct calculation error.
