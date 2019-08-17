@@ -1,17 +1,17 @@
-# Se escoge el lenguaje de programacion
+# Select programming language
 language: node_js
 
-# Se escogen las versiones del lenguaje de programacion a verificar
+# Select the programming language versions
 node_js:
   - "stable"
   - "10"
 
-# Se detallan los directorios que se almacenaran en cache
+# Configure folders with cache
 cache:
   directories:
     - node_modules
 
-# Se detallan los correos electronicos donde se enviaran las notificaciones del proceso de integracion continua
+# Configure notifications (email)
 notifications:
   email:
     on_failure: always
@@ -19,16 +19,16 @@ notifications:
     recipients:
       - daniel.valenzuela@softcrum.com
 
-# Se detallan las librerias previas necesaria para las pruebas
+# Configure pre-execution instructions
 before_script:
   - npm i -g typescript
   - npm i -g yarn
 
-# Se instalan las librerias necesaria para las pruebas
+# Install dependencies
 install:
   - yarn install
 
-# Se ejecutan las pruebas de estandarizacion, unitarias y funcionales
+# Execution scripts (linters, testing)
 script:
   - yarn lint
   - yarn test
