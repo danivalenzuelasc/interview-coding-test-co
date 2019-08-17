@@ -75,3 +75,15 @@ for (let i = 1; i <= 30; i += 1) {
   console.log('');
 }
 ```
+
+## Solution
+- Architecture based on object-oriented programming
+- Architecture developed in NodeJS (`node`: 10.16.0, `npm`: 6.10.3)
+- Meaningful git commits, we expect to see your solution approach as commit messages
+- We expect a Node.js (>6) codebase, otherwise you should provide a `Dockerfile` with all the required dependencies to run the required commands.
+- 100% code coverage, you should provide the report and the command to run the tests and get the coverage report.
+
+### Required commands
+- `yarn lint`, run the linter set display the standardization error report
+- `yarn test`, run the test set and show the coverage report
+- `yarn start` or `yarn after-30-days`, the file `products_after_30_days.txt` is exported with the results obtained
