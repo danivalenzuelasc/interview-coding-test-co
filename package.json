@@ -47,7 +47,7 @@
     "lint": "eslint spec/**/*.js src/*.js src/**/*.js",
     "message:commit": "echo 'Start pre-hooks ... script lint & script test'",
     "start": "npm run after-30-days",
-    "test": "jest --verbose --forceExit"
+    "test": "jest --verbose --forceExit --detectOpenHandles"
   },
   "pre-commit": [
     "message:commit",
