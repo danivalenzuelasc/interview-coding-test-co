@@ -20,7 +20,7 @@
   "license": "MIT",
   "private": false,
   "homepage": "https://github.com/danivalenzuelas/interview-coding-test-co#readme",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danivalenzuelas/interview-coding-test-co.git"
@@ -43,10 +43,10 @@
     "testEnvironment": "node"
   },
   "scripts": {
-    "after-30-days": "",
-    "lint": "eslint src/**/*.js",
-    "message:commit": "echo 'Se comienzan ha realizar las pruebas ... script lint & script test'",
-    "start": "npm run lint:watch",
+    "after-30-days": "node src/index.js",
+    "lint": "eslint spec/**/*.js src/*.js src/**/*.js",
+    "message:commit": "echo 'Start pre-hooks ... script lint & script test'",
+    "start": "npm run after-30-days",
     "test": "jest --verbose --forceExit"
   },
   "pre-commit": [
