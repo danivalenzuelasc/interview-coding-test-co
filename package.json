@@ -44,9 +44,9 @@
   },
   "scripts": {
     "after-30-days": "",
-    "lint": "eslint index.js src/*.js utils/*.js src/**/*.js",
+    "lint": "eslint src/**/*.js",
     "message:commit": "echo 'Se comienzan ha realizar las pruebas ... script lint & script test'",
-    "start": "index.js & npm run lint:watch",
+    "start": "npm run lint:watch",
     "test": "jest --verbose --forceExit"
   },
   "pre-commit": [
@@ -56,7 +56,8 @@
   ],
   "dependencies": {
     "fs": "0.0.2",
-    "uuid": "3.3.2"
+    "uuid": "3.3.2",
+    "validator": "11.1.0"
   },
   "devDependencies": {
     "eslint": "6.1.0",
@@ -67,6 +68,7 @@
     "eslint-plugin-react-hooks": "1.7.0",
     "eslint-watch": "6.0.0",
     "jest": "24.9.0",
-    "pre-commit": "1.2.2"
+    "pre-commit": "1.2.2",
+    "react": "16.9.0"
   }
 }

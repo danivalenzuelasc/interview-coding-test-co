@@ -11,5 +11,5 @@ class Product {
   }
 }
 
-// Export Product
+// Export model Product
 module.exports = Product;
